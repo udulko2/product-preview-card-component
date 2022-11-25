@@ -44,8 +44,6 @@ body {
 .product-preview-card-component {
   max-width: 343px;
   width: 100%;
-  background-color: var(--white);
-  border-radius: 10px;
   /* margin: 0 auto; */
   position: absolute;
   left: 50%;
@@ -54,14 +52,16 @@ body {
 }
 
 .product-preview-img {
+  display: block;
   max-width: 100%;
   height: auto;
   border-radius: 10px 10px 0 0;
 }
 
 .product-preview-info {
-  padding: 24px;
-  padding-top: 19px;
+  padding: 23px 24px 24px;
+  background-color: var(--white);
+  border-radius: 0 0 10px 10px;
 }
 
 .perfume {
@@ -136,5 +136,9 @@ body {
   .container {
     max-width: 1440px;
     height: 800px;
+  }
+
+  .product-preview-card-component {
+    display: flex;
   }
 }
